@@ -21,7 +21,6 @@ function memory_check(){
   free -h
   echo "-----------------------------------------------"
   echo "Top 10 Memory usage process id's"
-  echo "-----------------------------------------------"
   ps -eo pid,ppid,%cpu,%mem,cmd --sort=-%cpu | head
   echo "-----------------------------------------------"
 }
@@ -33,7 +32,6 @@ function cpu_stats(){
   mpstat
   echo "-----------------------------------------------"
   echo "Top 10 CPU usage process id's"
-  echo "-----------------------------------------------"
   ps -eo pid,ppid,%cpu,%mem,cmd --sort=-%mem | head
   echo "-----------------------------------------------"
 }
